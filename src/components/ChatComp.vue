@@ -34,7 +34,7 @@
   
   <style scoped>
   .sent-message {
-    background-color: #4CAF50;
+    background-color: rgb(191, 0, 255);
     color: white;
     padding: 10px;
     border-radius: 5px;

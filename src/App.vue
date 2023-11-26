@@ -5,8 +5,8 @@ import Perfil from './components/PerfilUsuario.vue'
 import AmigosSeguidores from './components/AmigosSeguidores.vue'
 import PerfilPrueba from './components/PerfilPrueba.vue'
 
-//import Chat from './components/Chat.vue'
-//import Busqueda from './components/Busqueda.vue'
+import Chat from './components/ChatComp.vue'
+import Busqueda from './components/BusquedaComp.vue'
 import Login from './components/LoginForm.vue'
 import Register from './components/RegisterForm.vue'
 //import Usuario from './components/Usuario.vue'
@@ -16,8 +16,8 @@ const routes = {
   '/': Home,
   '/Perfil':Perfil,
   '/AmigosSeguidores':AmigosSeguidores,
-  //'/Chat': Chat,
-  //'/Busqueda': Busqueda,
+  '/Chat': Chat,
+  '/Busqueda': Busqueda,
   '/Login': Login,
   '/Register':Register,
   '/PerfilPrueba':PerfilPrueba
