@@ -55,11 +55,11 @@ const currentView = computed(() => {
           <a class="nav-link active"  style="color:#bf00ff" href="#/AmigosSeguidores">Amigos/seguidores</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active"  style="color:#bf00ff" href="#">Chatear con amigos</a>
+          <a class="nav-link active"  style="color:#bf00ff" href="#/Chat">Chatear con amigos</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" style="color:#bf00ff" href="#">Busqueda</a>
+          <a class="nav-link active" style="color:#bf00ff" href="#/Busqueda">Busqueda</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" style="color:#bf00ff" href="#/non-existent-path">Error</a>
