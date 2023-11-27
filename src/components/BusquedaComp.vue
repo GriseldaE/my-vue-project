@@ -1,44 +1,15 @@
 <template>
-    <div>
-      <input v-model="searchQuery" @input="search" placeholder="Buscar usuarios...">
-      <ul>
-        <li v-for="user in filteredUsers" :key="user.id">{{ user.name }}</li>
-      </ul>
-    </div>
-  </template>
-  
-  <!-- datos reales -->
-  <!-- <script>
-  export default {
-    data() {
-      return {
-        searchQuery: '',
-        users: [
-          { id: 1, name: 'Usuario 1' },
-          { id: 2, name: 'Usuario 2' },
-          { id: 3, name: 'Usuario 3' },
-          // ... más usuarios
-        ]
-      };
-    },
-    computed: {
-      filteredUsers() {
-        return this.users.filter(user =>
-          user.name.toLowerCase().includes(this.searchQuery.toLowerCase())
-        );
-      }
-    },
-    methods: {
-      search() {
-        // Puedes realizar acciones adicionales al escribir en la barra de búsqueda si es necesario
-        console.log('Buscando...', this.searchQuery);
-      }
-    }
-  };
-  </script> -->
+  <div class="search-container">
+    <input v-model="searchQuery" @input="search" placeholder="Buscar usuarios..." class="search-input">
+    <ul class="user-list">
+      <li v-for="user in filteredUsers" :key="user.id" class="user-item">
+        {{ user.name }}
+      </li>
+    </ul>
+  </div>
+</template>
 
-  <!-- dummy data -->
-  <script>
+<script>
 export default {
   data() {
     return {
@@ -47,7 +18,8 @@ export default {
         { id: 1, name: 'Usuario 1', email: 'usuario1@example.com' },
         { id: 2, name: 'Usuario 2', email: 'usuario2@example.com' },
         { id: 3, name: 'Usuario 3', email: 'usuario3@example.com' },
-        // ... más usuarios
+        { id: 32, name: 'Usuario 32', email: 'usuario32@example.com' },
+        { id: 38, name: 'Usuario 38', email: 'usuario38@example.com' },
       ]
     };
   },
@@ -61,25 +33,49 @@ export default {
   },
   methods: {
     search() {
-      // Puedes realizar acciones adicionales al escribir en la barra de búsqueda si es necesario
       console.log('Buscando...', this.searchQuery);
     }
   }
 };
 </script>
 
-  
-  <style scoped>
-  /* Estilos opcionales para dar formato a la lista de usuarios, etc. */
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  li {
-    margin: 5px 0;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  </style>
-  
+<style scoped>
+.search-container {
+  text-align: center;
+  margin-top: 45px;
+  background-color: #6D5682;
+  color: #fff;
+}
+
+.search-input {
+  padding: 10px;
+  margin-top: 10px;
+  width: 300px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #555;
+  color: #fff;
+}
+
+.user-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.user-item {
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: #666;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+.user-item:hover {
+  background-color: #777;
+}
+</style>

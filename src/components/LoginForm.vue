@@ -1,6 +1,7 @@
 <!-- src/components/LoginForm.vue -->
 <template>
-     <div class="login-container">
+    <div class="login-container">
+      <div class="login-form">
     <h2 class="logo">Tech Girls</h2>
     <form class="login-form">
       <label for="username">Usuario</label>
@@ -11,7 +12,7 @@
 
       <button @click.prevent="login">Iniciar Sesión</button>
     </form>
-  </div>
+  </div></div>
  
 </template>
 
@@ -36,18 +37,23 @@ export default {
 body {
   background-color: #653790;
 }
-.login-container {
-max-width: 600px;
-margin: auto;
-margin-top: 75px;
-padding: 20px;
-border: 1px solid rgb(191, 0, 255);
-border-radius: 8px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-text-align: center;
-background-color: #A371D1;
+.login-form {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: #565656;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+.login-container {
+  background-color: #795F92;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .logo {
 font-size: 32px;
 color: #ffffff;

@@ -81,7 +81,7 @@ const currentView = computed(() => {
 /* */
 #menu{
   background-color: #611c7c ;
-  box-shadow: #bf00ff 0px 5px 15px;
+  box-shadow: rgb(191, 0, 255) 0px 5px 15px;
 }
 *{
   text-shadow: #bf00ff 0px 5px 15px;
