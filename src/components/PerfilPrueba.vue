@@ -9,7 +9,7 @@ export default {
       mostrarElemento2: false,
       nombre: 'Elena',
       imagenURL: 'https://thumbs.dreamstime.com/b/informaci%C3%B3n-an%C3%B3nima-mujer-icono-dibujo-animado-estilo-dibujos-animados-de-vector-para-dise%C3%B1o-web-aislado-sobre-fondo-blanco-220529678.jpg',
-      nuevoNombre: '', // Variable para almacenar el nuevo nombre
+      nuevoNombre: '', 
     };
   },
   methods: {
@@ -20,11 +20,11 @@ export default {
       this.mostrarElemento2 = !this.mostrarElemento2;
     },
     changename() {
-      // Asigna el nuevo nombre solo si no está vacío
+      
       if (this.nuevoNombre.trim() !== '') {
         this.nombre = this.nuevoNombre;
       }
-      // Limpia el nuevo nombre después de cambiarlo
+    
       this.nuevoNombre = '';
     },
     cambiarImagen(event) {
@@ -55,7 +55,11 @@ export default {
                 style="width: 150px; z-index: 1">
               <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"
                 style="z-index: 1;">
-                Edit profile
+                Follow
+              </button>
+              <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"
+                style="z-index: 1;">
+                Add Friends
               </button>
             </div>
             <div class="ms-3" style="margin-top: 130px;">

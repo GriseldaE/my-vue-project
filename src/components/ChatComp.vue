@@ -1,4 +1,5 @@
 <template>
+  <div id="todo">
   <div class="chat-container">
     <div class="chat-messages">
       <div v-for="message in messages" :key="message.id">
@@ -11,6 +12,7 @@
       <input v-model="newMessage" @keyup.enter="sendMessage" placeholder="Escribe un mensaje..." />
     </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -29,7 +31,6 @@ export default {
       if (this.newMessage.trim() !== '') {
         this.messages.push({ id: this.messages.length + 1, text: this.newMessage, sent: true });
         this.newMessage = '';
-        // Agrega la lógica para enviar el mensaje a través de una red social.
       }
     }
   }

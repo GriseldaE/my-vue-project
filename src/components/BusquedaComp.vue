@@ -43,7 +43,7 @@ export default {
 .search-container {
   text-align: center;
   margin-top: 45px;
-  background-color: #6D5682;
+  background-color: #0d080e; 
   color: #fff;
 }
 
@@ -54,7 +54,7 @@ export default {
   border: 2px solid #fff;
   border-radius: 5px;
   font-size: 16px;
-  background-color: #555;
+  background-color: #611c7c ;
   color: #fff;
 }
 
@@ -69,13 +69,13 @@ export default {
   padding: 10px;
   border: 2px solid #fff;
   border-radius: 5px;
-  background-color: #666;
+  background-color: #611c7c ;
   cursor: pointer;
   transition: background-color 0.3s ease;
   color: #fff;
 }
 
 .user-item:hover {
-  background-color: #777;
+  background-color: #611c7c ;
 }
 </style>

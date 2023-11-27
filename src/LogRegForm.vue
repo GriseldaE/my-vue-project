@@ -1,4 +1,4 @@
-<!-- src/views/LoginRegister.vue -->
+
 <template>
   <div>
     <login-form />

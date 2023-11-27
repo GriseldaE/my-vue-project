@@ -30,7 +30,6 @@ export default {
   },
   methods: {
     register() {
-      // Aquí puedes agregar la lógica de registro
       console.log('Register:', this.newUsername, this.newPassword);
     },
   },
@@ -39,7 +38,7 @@ export default {
 
 <style scoped>
 .register-container {
-  background-color: #795F92;
+  background-color: #0d080e; 
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -50,7 +49,7 @@ export default {
   max-width: 400px;
   width: 100%;
   padding: 20px;
-  background-color: #565656;
+  background-color: #611c7c ;
   color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);

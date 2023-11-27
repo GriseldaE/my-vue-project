@@ -35,20 +35,20 @@ export default {
 
 <style>
 body {
-  background-color: #653790;
+  background-color: #0d080e; 
 }
 .login-form {
   max-width: 400px;
   width: 100%;
   padding: 20px;
-  background-color: #565656;
+  background-color: #611c7c ;
   color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .login-container {
-  background-color: #795F92;
+  background-color: #0d080e; 
   height: 100vh;
   display: flex;
   justify-content: center;

@@ -4,13 +4,10 @@ import Home from './components/Home.vue'
 import Perfil from './components/PerfilUsuario.vue'
 import AmigosSeguidores from './components/AmigosSeguidores.vue'
 import PerfilPrueba from './components/PerfilPrueba.vue'
-
 import Chat from './components/ChatComp.vue'
 import Busqueda from './components/BusquedaComp.vue'
 import Login from './components/LoginForm.vue'
 import Register from './components/RegisterForm.vue'
-//import Usuario from './components/Usuario.vue'
-//import Chat from './components/Configuracion.vue'
 import NotFound from './components/NotFound.vue'
 const routes = {
   '/': Home,
@@ -78,7 +75,7 @@ const currentView = computed(() => {
 </template>
 
 <style>
-/* */
+
 #menu{
   background-color: #611c7c ;
   box-shadow: rgb(191, 0, 255) 0px 5px 15px;

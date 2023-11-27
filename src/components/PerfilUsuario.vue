@@ -8,8 +8,8 @@ export default {
       mostrarElemento: false,
       mostrarElemento2: false,
       nombre: 'Elena',
-      imagenURL: 'https://thumbs.dreamstime.com/b/informaci%C3%B3n-an%C3%B3nima-mujer-icono-dibujo-animado-estilo-dibujos-animados-de-vector-para-dise%C3%B1o-web-aislado-sobre-fondo-blanco-220529678.jpg',
-      nuevoNombre: '', // Variable para almacenar el nuevo nombre
+      imagenURL: 'https://img.freepik.com/fotos-premium/superheroe-animal-tema-edicion-imitacion_947926-601.jpg',
+      nuevoNombre: '', 
     };
   },
   methods: {
@@ -20,11 +20,11 @@ export default {
       this.mostrarElemento2 = !this.mostrarElemento2;
     },
     changename() {
-      // Asigna el nuevo nombre solo si no está vacío
+      
       if (this.nuevoNombre.trim() !== '') {
         this.nombre = this.nuevoNombre;
       }
-      // Limpia el nuevo nombre después de cambiarlo
+      
       this.nuevoNombre = '';
     },
     cambiarImagen(event) {
@@ -50,16 +50,18 @@ export default {
         <div class="card border-dark mb-3">
           <div class="rounded-top text-white d-flex flex-row" style="background-color: #611c7c; height:200px;">
             <div class="ms-4 mt-5 d-flex flex-column" style="width: 150px;">
-              <img src="https://img.freepik.com/fotos-premium/superheroe-animal-tema-edicion-imitacion_947926-601.jpg"
+              <img :src="imagenURL"
                 alt="Generic placeholder image" class="img-fluid img-thumbnail mt-4 mb-2"
                 style="width: 150px; z-index: 1">
+                
               <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"
-                style="z-index: 1;">
-                Edit profile
+                style="z-index: 1;" @click="toggleElemento">
+                Editar perfil
               </button>
             </div>
+            
             <div class="ms-3" style="margin-top: 130px;">
-              <h5>Ana Horwitz</h5>
+              <h5>{{ nombre }}</h5>
               <p>New York</p>
             </div>
           </div>
@@ -81,7 +83,12 @@ export default {
           </div>
           <div class="card-body p-4 " style="background-color:#451955; color:white;" >
             <div class="mb-5">
-              <p class="lead fw-normal ms-3">About</p>
+              <p class="lead fw-normal ms-3"></p>
+              <br>
+              <div v-if="mostrarElemento">
+                Nombre: <input v-model="nombre">
+                Foto Perfil:<input type="file" @change="cambiarImagen" />
+                </div>
               <div class="p-4" style="background-color:#451955;">
                 <p class="font-italic ms-3">Web Developer</p>
                 <p class="font-italic ms-3">Lives in New York</p>
@@ -116,6 +123,13 @@ export default {
         </div>
       </div>
     </div>
+    <div id='example-3'>
+  <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
+  <label for="jack">Privado</label>
+  <input type="checkbox" id="john" value="John" v-model="checkedNames">
+  <label for="john">Publico</label>
+  <br>
+</div>
   </div>
 </section>
 </div>

@@ -18,6 +18,16 @@ export default {
         usuariocomentario: 'Sofia',
         usuariocomentariofoto: 'https://cdn.icon-icons.com/icons2/1999/PNG/512/avatar_people_person_profile_user_woman_icon_123359.png',
         comentarios: 'Es una noticia interesante'
+      },
+      {
+        usuario: 'El pais',
+        fotousuario: 'https://imagenes.elpais.com/resizer/q1Bzvi_vytH6svtum46Q9iiKu8Q=/300x300/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/PSMME3J7ZBDOHK4S6ZIIFVDEAQ.png',
+        titulo: 'El nuevo jefe de OpenAI, un ‘apocalíptico’ que quiere frenar la inteligencia artificial',
+        descripcion: 'Emmett Shear ha alertado del riesgo de que la tecnología en la que su empresa es puntera destruya a la humanidad',
+        imagen: 'https://imagenes.elpais.com/resizer/N_RBq0Ci6yNG_b_im18TsnX-C2g=/828x466/cloudfront-eu-central-1.images.arcpublishing.com/prisa/GZTIQKS2CVCBZIXBWSKVGQPKVU.jpg',
+        usuariocomentario: 'Sofia',
+        usuariocomentariofoto: 'https://cdn.icon-icons.com/icons2/1999/PNG/512/avatar_people_person_profile_user_woman_icon_123359.png',
+        comentarios: 'Es una noticia interesante'
       }
     ]);
 
@@ -145,5 +155,5 @@ export default {
  }
 
 
-  /* ... (resto del estilo) ... */
+
 </style>
