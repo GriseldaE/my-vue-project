@@ -44,7 +44,7 @@ export default {
  <div class="background">
     <div class="overlay opacity-50 active">
         <br><br><br>
-      <h1 class="display-4 opacity-100 ">Bievenida a TechGirls</h1>
+      <h1 class="display-4 opacity-100 ">Bienvenida a TechGirls</h1>
       
     </div>
  </div>
