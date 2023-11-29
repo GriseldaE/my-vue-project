@@ -9,6 +9,7 @@ import Busqueda from './components/BusquedaComp.vue'
 import Login from './components/LoginForm.vue'
 import Register from './components/RegisterForm.vue'
 import NotFound from './components/NotFound.vue'
+import RestablecerComp from './components/RestablecerComp.vue'
 const routes = {
   '/': Home,
   '/Perfil':Perfil,
@@ -17,7 +18,8 @@ const routes = {
   '/Busqueda': Busqueda,
   '/Login': Login,
   '/Register':Register,
-  '/PerfilPrueba':PerfilPrueba
+  '/PerfilPrueba':PerfilPrueba,
+  '/Restablecer':RestablecerComp,
 }
 
 const currentPath = ref(window.location.hash)

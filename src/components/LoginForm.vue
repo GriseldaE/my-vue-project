@@ -28,10 +28,9 @@ export default {
 
       <button @click="Log">Login</button>
     </form>
-    <p @click="Log" href="/">Forget your password?</p>
-    <!-- <router-link to="/RestablecerComp">
-      <button>¿Olvidaste tu contraseña?</button>
-    </router-link> -->
+
+    <a href="#/Restablecer">Forget your password?</a>
+    
   </div>
 </div>
 </template>
