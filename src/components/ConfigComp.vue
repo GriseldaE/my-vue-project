@@ -2,13 +2,21 @@
 <template>
     <div>
       <h2>Configuración de Usuario</h2>
-      <!-- Agrega tus opciones de configuración aquí -->
+      <div>
+        <div>
+          <p>Preferencias</p>
+        </div>
+        <div>
+          <p>Privacidad</p>
+        </div>
+        <div>Actividad</div>
+      </div>
     </div>
   </template>
   
   <script>
   export default {
-    name: 'ConfiguracionUsuario',
+    name: 'ConfigComp',
     data() {
       return {
         // Puedes definir variables para almacenar las preferencias del usuario aquí

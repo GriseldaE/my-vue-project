@@ -1,21 +1,3 @@
-<!-- src/components/LoginForm.vue -->
-<template>
-    <div class="login-container">
-      <div class="login-form">
-    <h2 class="logo">Tech Girls</h2>
-    <form class="login-form">
-      <label for="username">Usuario</label>
-      <input type="text" id="username" v-model="username" placeholder="Ingresa tu usuario" />
-
-      <label for="password">Contraseña</label>
-      <input type="password" id="password" v-model="password" placeholder="Ingresa tu contraseña" />
-
-      <button @click.prevent="login">Iniciar Sesión</button>
-    </form>
-  </div></div>
- 
-</template>
-
 <script>
 export default {
   data() {
@@ -25,13 +7,34 @@ export default {
     };
   },
   methods: {
-    login() {
-      // Aquí puedes agregar la lógica de autenticación
-      console.log('Login:', this.username, this.password);
+    Log() {
+      window.location.reload();
     }
   }
 };
+
 </script>
+
+<template>
+    <div class="login-container">
+      <div class="login-form">
+    <h2 class="logo">Tech Girls</h2>
+    <form class="login-form">
+      <label for="username">Username</label>
+      <input type="text" id="username" v-model="username" placeholder="Usuario" />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" v-model="password" placeholder="Contraseña" />
+
+      <button @click="Log">Login</button>
+    </form>
+    <p @click="Log" href="/">Forget your password?</p>
+    <!-- <router-link to="/RestablecerComp">
+      <button>¿Olvidaste tu contraseña?</button>
+    </router-link> -->
+  </div>
+</div>
+</template>
 
 <style>
 body {

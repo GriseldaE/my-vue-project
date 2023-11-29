@@ -5,16 +5,16 @@
       <h2>Registro</h2>
       <form @submit.prevent="Registro">
         <div class="form-group">
-          <label for="newUsername">Usuario:</label>
+          <label for="newUsername">Username:</label>
           <input type="text" id="newUsername" v-model="newUsername" required />
         </div>
 
         <div class="form-group">
-          <label for="newPassword">Contraseña:</label>
+          <label for="newPassword">Password:</label>
           <input type="password" id="newPassword" v-model="newPassword" required />
         </div>
 
-        <button type="submit">Register</button>
+        <button @click="Log">Sign Up</button>
       </form>
     </div>
   </div>
@@ -32,6 +32,9 @@ export default {
     register() {
       console.log('Register:', this.newUsername, this.newPassword);
     },
+    Log() {
+      window.location.reload();
+    }
   },
 };
 </script>

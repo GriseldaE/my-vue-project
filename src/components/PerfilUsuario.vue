@@ -35,6 +35,9 @@ export default {
         this.imagenURL = URL.createObjectURL(archivo);
       }
     },
+    // cambiarPref(){
+
+    // },
   },
 
 };
@@ -56,12 +59,12 @@ export default {
                 
               <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"
                 style="z-index: 1;" @click="toggleElemento">
-                Edit perfil
-              </button>
+                Edit profile
+              </button><br>
 
               <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"
                 style="z-index: 1;" @click="toggleElemento2">
-                Configuration
+                Settings
               </button>
             </div>
             
@@ -86,13 +89,35 @@ export default {
               </div>
             </div>
           </div>
-          <div class="card-body p-4 " style="background-color:#451955; color:white;" >
+          <div class="card-body p-4 " style="background-color:#451955; color:white; margin-top: 10%;" >
             <div class="mb-5">
               <p class="lead fw-normal ms-3"></p>
               <br>
               <div v-if="mostrarElemento">
                 Nombre: <input v-model="nombre">
                 Foto Perfil:<input type="file" @change="cambiarImagen" />
+                </div>
+                <div v-if="mostrarElemento2">
+                <div><h3>Preferences</h3><br>
+                 <p>Notifications</p> 
+                 <input type="radio" name="radio1" id="yes">
+                 <label for="yes">Yes</label>&nbsp;
+                 <input type="radio" name="radio1" id="no">
+                 <label for="no">No</label>
+                </div>
+                 <div><h3>Privacy</h3><br>
+                 <p>Perfil</p>
+                 <input type="radio" name="radio2" id="priv">
+                 <label for="priv">Privated</label>&nbsp;
+                 <input type="radio" name="radio2" id="public">
+                 <label for="public">Public</label>
+                </div>
+                 <div><h3>Activity</h3>
+                 <input type="radio" name="radio3" id="hidden">
+                 <label for="hidden">Hide content</label>&nbsp;
+                 <input type="radio" name="radio3" id="visible">
+                 <label for="visible">Show content</label>
+                </div>
                 </div>
               <div class="p-4" style="background-color:#451955;">
                 <p class="font-italic ms-3">Web Developer</p>
@@ -128,9 +153,6 @@ export default {
         </div>
       </div>
     </div>
-    <div id='example-3'>
- 
-</div>
   </div>
 </section>
 </div>
