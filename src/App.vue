@@ -49,14 +49,14 @@ const currentView = computed(() => {
           <a class="nav-link active"  style="color:#bf00ff" href="#/Perfil">Perfil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active"  style="color:#bf00ff" href="#/AmigosSeguidores">Amigos/seguidores</a>
+          <a class="nav-link active"  style="color:#bf00ff" href="#/AmigosSeguidores">Friends/Followers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active"  style="color:#bf00ff" href="#/Chat">Chatear con amigos</a>
+          <a class="nav-link active"  style="color:#bf00ff" href="#/Chat">Chat</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link active" style="color:#bf00ff" href="#/Busqueda">Busqueda</a>
+          <a class="nav-link active" style="color:#bf00ff" href="#/Busqueda">Search</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" style="color:#bf00ff" href="#/non-existent-path">Error</a>

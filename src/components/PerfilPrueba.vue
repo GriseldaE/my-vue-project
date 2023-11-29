@@ -5,6 +5,10 @@
 export default {
   data() {
     return {
+      buttonTextFo: 'Follow',
+      claseDelBotonFo: 'btn btn-outline-dark',
+      buttonTextFr: 'Add Friends',
+      claseDelBotonFr: 'btn btn-outline-dark',
       mostrarElemento: false,
       mostrarElemento2: false,
       nombre: 'Elena',
@@ -26,6 +30,28 @@ export default {
       }
     
       this.nuevoNombre = '';
+    },
+    cambiarFollow() {
+      this.claseDelBotonFo =
+        this.claseDelBotonFo === 'btn btn-outline-dark'
+          ? 'btn btn-outline-success'
+          : 'btn btn-outline-dark';
+          this.buttonTextFo =
+        this.claseDelBotonFo === 'btn btn-outline-success'
+          ? 'Unfollow'
+          : 'Follow';
+
+    },
+    cambiarFriends() {
+      
+      this.claseDelBotonFr =
+        this.claseDelBotonFr === 'btn btn-outline-dark'
+          ? 'btn btn-outline-success'
+          : 'btn btn-outline-dark';
+          this.buttonTextFr =
+        this.claseDelBotonFr === 'btn btn-outline-success'
+          ? 'Send friend request'
+          : 'Add friends';
     },
     cambiarImagen(event) {
       const archivo = event.target.files[0];
@@ -53,13 +79,13 @@ export default {
               <img src="https://imagenes.elpais.com/resizer/q1Bzvi_vytH6svtum46Q9iiKu8Q=/300x300/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/PSMME3J7ZBDOHK4S6ZIIFVDEAQ.png"
                 alt="Generic placeholder image" class="img-fluid img-thumbnail mt-4 mb-2"
                 style="width: 150px; z-index: 1">
-              <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"
+              <button type="button" @click="cambiarFollow" :class="claseDelBotonFo" data-mdb-ripple-color="dark"
                 style="z-index: 1;">
-                Follow
+                {{ buttonTextFo }}
               </button>
-              <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"
+              <button type="button" @click="cambiarFriends" :class="claseDelBotonFr" data-mdb-ripple-color="dark"
                 style="z-index: 1;">
-                Add Friends
+                {{buttonTextFr}}
               </button>
             </div>
             <div class="ms-3" style="margin-top: 130px;">

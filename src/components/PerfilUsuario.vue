@@ -56,12 +56,12 @@ export default {
                 
               <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"
                 style="z-index: 1;" @click="toggleElemento">
-                Editar perfil
+                Edit perfil
               </button>
 
               <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"
                 style="z-index: 1;" @click="toggleElemento2">
-                Configuracion
+                Configuration
               </button>
             </div>
             
@@ -129,11 +129,7 @@ export default {
       </div>
     </div>
     <div id='example-3'>
-  <input type="checkbox" id="jack" value="Jack" v-model="checkedNames">
-  <label for="jack">Privado</label>
-  <input type="checkbox" id="john" value="John" v-model="checkedNames">
-  <label for="john">Publico</label>
-  <br>
+ 
 </div>
   </div>
 </section>
