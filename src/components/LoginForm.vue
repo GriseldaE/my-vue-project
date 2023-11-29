@@ -26,7 +26,7 @@ export default {
       <label for="password">Password</label>
       <input type="password" id="password" v-model="password" placeholder="Contraseña" />
 
-      <button @click="Log">Login</button>
+      <a class="btn btn-primary btn-lg" href ="#/">Login</a>
     </form>
     <a  href="#/Restablecer">Forget your password?</a>
     
@@ -35,6 +35,12 @@ export default {
 </template>
 
 <style>
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:active,
+.btn.btn-primary.active {
+  background-color: #9b59b7;
+}
 body {
   background-color: #0d080e; 
 }

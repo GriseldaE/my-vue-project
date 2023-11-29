@@ -14,7 +14,7 @@
           <input type="password" id="newPassword" v-model="newPassword" required />
         </div>
 
-        <button @click="Log">Sign Up</button>
+        <a class="btn btn-primary btn-lg" href="#/Login">Register</a>
       </form>
     </div>
   </div>
@@ -40,6 +40,12 @@ export default {
 </script>
 
 <style scoped>
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:active,
+.btn.btn-primary.active {
+  background-color: #9b59b7;
+}
 .register-container {
   background-color: #0d080e; 
   height: 100vh;
