@@ -58,6 +58,11 @@ export default {
                 style="z-index: 1;" @click="toggleElemento">
                 Editar perfil
               </button>
+
+              <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"
+                style="z-index: 1;" @click="toggleElemento2">
+                Configuracion
+              </button>
             </div>
             
             <div class="ms-3" style="margin-top: 130px;">
