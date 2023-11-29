@@ -28,8 +28,7 @@ export default {
 
       <button @click="Log">Login</button>
     </form>
-
-    <a href="#/Restablecer">Forget your password?</a>
+    <a  href="#/Restablecer">Forget your password?</a>
     
   </div>
 </div>
